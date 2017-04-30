@@ -1,8 +1,9 @@
 var iRandom = document.getElementById("random");
 var textRandom = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'@/!?¿";
 window.addEventListener('load', newCaptcha);
-    document.getElementById("reload").addEventListener("click", newCaptcha);
+    document.getElementById("reload").addEventListener("click", newCaptcha); document.getElementById("imgCaptcha").addEventListener("click", newCaptcha);
     document.getElementById("tick").addEventListener("click", checkCaptcha);
+
 
 function newCaptcha(){
     iRandom.value = randomCaptcha(textRandom,7);
